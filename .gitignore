@@ -1,6 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
+node_modules
+dist
+dist-ssr
+*.local
 
-# SOLO initial credential and cache exclusions
+# Local secrets and credentials
 .env
 .env.*
 !.env.example
@@ -17,9 +29,18 @@ id_ed25519
 *.key
 *.p12
 *.pfx
-node_modules/
-.venv/
-venv/
-__pycache__/
-.pytest_cache/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.venv
+venv
+__pycache__
+.pytest_cache
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
